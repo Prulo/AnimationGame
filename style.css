@@ -1,0 +1,49 @@
+*{
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+.game{
+    width: 600px;
+    height: 200px;
+    border: 1px solid black;
+    margin: auto;
+    background-image: url(https://media.istockphoto.com/id/1171564349/video/retro-land.jpg?s=640x640&k=20&c=UytoK5VuR3nXezFTIryRH6D4mHUE846zUBZhlIJA5cw=);
+}
+#character{
+    width: 20px;
+    height: 50px;
+    background-image: url(https://images.rawpixel.com/image_png_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvcGQzNi0xLTY5MDA5NTItam9iNjIzXzUucG5n.png);
+    background-repeat: none;
+    background-size: cover;
+    position:relative;
+    left: 20px;
+    top: 150px;
+    
+}
+.animate{
+    animation: jump 0.3s linear;
+}
+@keyframes jump{
+    0%{top: 150px;}
+    30%{top: 100px;}
+    70%{top: 100px;}
+    100%{top: 150px;}
+}
+
+#block{
+    background-color: blue;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    top: 130px;
+    left: 600px;
+    animation: block 1s infinite linear;
+}
+@keyframes block{
+    0%{left: 600px}
+    100%{left: -20px}
+}
+p{
+    text-align: center;
+}
